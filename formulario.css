@@ -1,29 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f5f5f5;
+body {
+    background-color: cadetblue;
+    font-family: "Comic Sans MS", cursive;
 }
 form{
     display: flex;
     flex-direction: column;
+    text-align: center;
     width: 400px;
     background-color: #f5f5f5;
-    padding: 45px;
+    padding: 45px 45px 30px 30px;
+    margin-top: 50px;
+    justify-content: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-form h2{
+ }
+ form h2{
     font-size: 35px;
     margin-bottom: 35px;
     color: #404040;
-}
+ }
 input{
     background-color: #f1f1f1;
     padding: 15px 20px;
@@ -36,11 +30,21 @@ input{
 }
 .btn{
     background-color: #3ea0e9;
-    color:#ffffff;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 15px;
     cursor: pointer;
 }
 .btn:hover{
     background-color: #42a8f6;
+
+}
+@media(max-midth:991px){
+    body{
+        padding: 30px;
+        
+    }
+    form{
+        width: 340px;
+    }
 }
